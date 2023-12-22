@@ -1,0 +1,19 @@
+- name: variable playbook
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Sudhakar
+      email: s@test.com
+
+-name: PLAY-2
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: ram
+      mail: r@test.com
+      cal: yes
+    - name: Jan
+      mail: j@test
+      cal: oiu
+
+
