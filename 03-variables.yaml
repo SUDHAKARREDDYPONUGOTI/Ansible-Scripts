@@ -5,7 +5,7 @@
     - name: Sudhakar
       email: s@test.com
 
--name: PLAY-2
+- name: PLAY-2
   hosts: localhost
   become: yes
   tasks:
