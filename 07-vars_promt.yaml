@@ -1,6 +1,6 @@
 - name: Vars Test playbook
   hosts: localhost
-  vars_promt:
+  vars_prompt:
   - name: USERNAME
     promt: please enter your username
     private: false # user can see the user name value 
