@@ -1,8 +1,11 @@
-- name: variable plyabook
+# PLAY level variables
+- name: variables from PLAY level
   hosts: localhost
-  become: yes
+  vars:
+    Course: "DevOps"
+    Trainer: "Sivakumar"
+    Duration: "110HRS"
   tasks:
-  - name: internal vars
+  - name: check variables
     ansible.builtin.debug:
-      meg: "Hi Sudhakar, I am an Indian and Planning to USA shift"
-      
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
