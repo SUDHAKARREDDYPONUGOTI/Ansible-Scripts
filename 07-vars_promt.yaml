@@ -5,7 +5,7 @@
     prompt: please enter your username
     private: false # user can see the user name value 
   - name: PASSWORD
-    prompt: please enter your username
+    prompt: please enter your password
     private: true # user can not see the password value
   tasks:
   - name: indian-playbooker
