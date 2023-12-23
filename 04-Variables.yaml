@@ -1,0 +1,8 @@
+- name: variable plyabook
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: internal vars
+    ansible.builtin.debug:
+      meg: "Hi Sudhakar, I am an Indian and Planning to USA shift"
+      
