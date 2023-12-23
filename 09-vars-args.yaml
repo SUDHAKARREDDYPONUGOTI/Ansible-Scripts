@@ -3,4 +3,4 @@
   tasks:
   - name: indian-playbooker
     ansible.builtin.debug:
-      msg: "i am learning {{TESTER}}, my {{Trainer}} and {{COUNTRY}} is {{PERSON}}"
+      msg: "i am learning {{TESTER}}, my {{Trainer}} and {{COUNTRY}}"
