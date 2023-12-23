@@ -1,5 +1,5 @@
 - name: Vars Test playbook
-  hosts: localhosts
+  hosts: localhost
   vars:
     namer: "Sudhakar"
     city: "Vijayawada"
