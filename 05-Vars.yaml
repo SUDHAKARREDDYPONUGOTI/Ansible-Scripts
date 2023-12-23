@@ -1,0 +1,11 @@
+- name: Vars Test playbook
+  hosts: localhosts
+  vars:
+    namer: "Sudhakar"
+    city: "Vijayawada"
+    Job: "Software employee"
+    domain: "SDET"
+  tasks:
+  - name: indian-playbooker
+    ansible.builtin.debug:
+      msg: "i am sudhakar andliving in {{city}} doing job as {{Job}}as a {{domain}}"
