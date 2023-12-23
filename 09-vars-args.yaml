@@ -1,0 +1,6 @@
+- name: Vars Test playbook
+  hosts: localhost
+  tasks:
+  - name: indian-playbooker
+    ansible.builtin.debug:
+      msg: "i am learning {{TESTER}}, my {{Trainer}} and {{COUNTRY}} is {{PERSON}}"
