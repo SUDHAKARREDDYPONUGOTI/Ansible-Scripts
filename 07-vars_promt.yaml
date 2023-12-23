@@ -1,0 +1,13 @@
+- name: Vars Test playbook
+  hosts: localhost
+  vars_promt:
+  - name: USERNAME
+    promt: please enter your username
+    private: false # user can see the user name value 
+  - name: PASSWORD
+    promt: please enter your username
+    private: true # user can not see the password value
+  tasks:
+  - name: indian-playbooker
+    ansible.builtin.debug:
+      msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
