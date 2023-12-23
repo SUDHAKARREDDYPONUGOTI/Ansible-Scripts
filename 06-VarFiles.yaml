@@ -1,10 +1,7 @@
 - name: Vars Test playbook
   hosts: localhost
-  vars:
-    namer: "Sudhakar"
-    city: "Vijayawada"
-    Job: "Software employee"
-    domain: "SDET"
+  vars_files:
+  - variableFiles.yaml
   tasks:
   - name: indian-playbooker
     vars:
