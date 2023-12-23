@@ -8,6 +8,6 @@
   tasks:
   - name: indian-playbooker
     vars:
-      FullName: "Sudhakar Reddy Ponugoti"
+      namer: "Sudhakar Reddy Ponugoti"
     ansible.builtin.debug:
       msg: "i am {{namer}} andliving in {{city}} doing job as {{Job}}as a {{domain}}"
