@@ -11,8 +11,5 @@
     - mysql
     - postfix
 
-  - name: installation completed
-    ansible.builtin.debug:
-      msg: "Installation completed {{item}}"
 
   
