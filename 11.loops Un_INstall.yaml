@@ -1,0 +1,17 @@
+- name: loops deta iteation
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: start looping for Installation
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: present
+    loop:
+    - {name: 'git', state: present}
+    - {name: 'mysql', state: absent}
+    - {name: 'ngnix', state: present}
+    
+    
+
+
+  
