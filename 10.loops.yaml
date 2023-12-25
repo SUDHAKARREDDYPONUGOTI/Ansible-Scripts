@@ -1,0 +1,18 @@
+- name: loops deta iteation
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: start looping for Installation
+    ansible.builtin.package:
+      name: {{item}}
+      state: present
+    loop:
+    - git
+    - mysql
+    - postfix
+
+  - name: installation completed
+    ansible.builtin.debug:
+      msg: "Installation completed {{item}}"
+
+  
