@@ -1,5 +1,5 @@
 - name: create web server
-  hosts: localhost
+  hosts: web
   become: yes
   tasks:
   - name: deploy web server
